@@ -1,0 +1,31 @@
+{
+    "name": "replaced-by-user-input",
+    "description": "replaced-by-user-input",
+    "version": "0.0.1",
+    "private": true,
+    "devDependencies": {
+        "jest": "^29.2.1"
+    },
+    "scripts": {
+        "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+    },
+    "jest": {
+        "testMatch": [
+            "**/__tests__/**/*.[jt]s?(x)",
+            "**/?(*.)+(spec|test).[jt]s?(x)",
+            "**/__tests__/**/*.mjs?(x)",
+            "**/?(*.)+(spec|test).mjs?(x)"
+        ],
+        "moduleFileExtensions": [
+            "mjs",
+            "js"
+        ]
+    },
+    "dependencies": {
+        "aws-sdk": "^2.1672.0",
+        "aws-sdk-mock": "^6.1.1",
+        "dotenv": "^16.4.5",
+        "mongodb": "^6.8.0",
+        "pg": "^8.12.0"
+    }
+}
